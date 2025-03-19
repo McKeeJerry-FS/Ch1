@@ -1,5 +1,16 @@
-import { CreatePost } from './components/CreatePost.jsx'
+import { PostList } from './components/PostList.jsx'
+
+const posts = [
+  {
+    title: 'Full-Stack React Projects',
+    contents: "Let's become full-stack developers",
+    author: 'Daniel Bugl',
+  },
+  {
+    title: 'Hello React!!',
+  },
+]
 
 export function App() {
-  return <CreatePost />
+  return <PostList posts={posts} />
 }
